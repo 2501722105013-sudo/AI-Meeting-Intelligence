@@ -1,0 +1,391 @@
+/* ============================================================
+   AI Meeting Intelligence — Premium Blue & White Theme
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* ── Base Reset ─────────────────────────────────────────── */
+html, body, [class*="css"] {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #F0F4FF;
+    color: #1E293B;
+}
+
+/* ── Main Container ─────────────────────────────────────── */
+.main .block-container {
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+    max-width: 1280px;
+}
+
+/* ── Hero Header ────────────────────────────────────────── */
+.app-header {
+    background: linear-gradient(135deg, #0F2460 0%, #1E3A8A 40%, #2563EB 80%, #3B82F6 100%);
+    padding: 2.8rem 3rem;
+    border-radius: 20px;
+    color: #FFFFFF;
+    box-shadow: 0 20px 60px -10px rgba(37, 99, 235, 0.45);
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.app-header::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 220px; height: 220px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 50%;
+}
+
+.app-header::after {
+    content: '';
+    position: absolute;
+    bottom: -60px; left: 200px;
+    width: 300px; height: 300px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 50%;
+}
+
+.app-header h1 {
+    font-weight: 800;
+    font-size: 2.4rem;
+    margin: 0 0 0.5rem 0;
+    color: #FFFFFF !important;
+    letter-spacing: -0.8px;
+    line-height: 1.15;
+}
+
+.app-header p {
+    font-size: 1rem;
+    margin: 0;
+    color: #BFDBFE;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+.header-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #DBEAFE;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(4px);
+}
+
+/* ── KPI / Metric Cards ─────────────────────────────────── */
+[data-testid="stMetric"] {
+    background: #FFFFFF;
+    padding: 1.4rem 1.5rem;
+    border-radius: 14px;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 4px 12px rgba(37,99,235,0.06);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+[data-testid="stMetric"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.13);
+    border-color: #93C5FD;
+}
+
+[data-testid="stMetricValue"] {
+    color: #1E3A8A !important;
+    font-weight: 800 !important;
+    font-size: 1.85rem !important;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #64748B !important;
+    font-weight: 600 !important;
+    font-size: 0.82rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.6px !important;
+}
+
+[data-testid="stMetricDelta"] {
+    font-size: 0.82rem !important;
+    font-weight: 600 !important;
+}
+
+/* ── Section Cards ──────────────────────────────────────── */
+.custom-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 1.8rem;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.2s ease;
+}
+
+.custom-card:hover {
+    box-shadow: 0 8px 28px rgba(37, 99, 235, 0.09);
+}
+
+.custom-card-header {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1E3A8A;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #EFF6FF;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* ── Upload Zone ────────────────────────────────────────── */
+.upload-zone {
+    background: linear-gradient(135deg, #EFF6FF, #DBEAFE);
+    border: 2px dashed #93C5FD;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: all 0.2s ease;
+    margin-bottom: 1rem;
+}
+
+.upload-zone:hover {
+    border-color: #2563EB;
+    background: linear-gradient(135deg, #DBEAFE, #BFDBFE);
+}
+
+/* ── Buttons ────────────────────────────────────────────── */
+.stButton > button {
+    background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%) !important;
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
+    font-size: 0.95rem !important;
+    border-radius: 10px !important;
+    padding: 0.65rem 1.8rem !important;
+    border: none !important;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3) !important;
+    transition: all 0.2s ease !important;
+    letter-spacing: 0.3px !important;
+}
+
+.stButton > button:hover {
+    background: linear-gradient(135deg, #1D4ED8 0%, #1E3A8A 100%) !important;
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.42) !important;
+    transform: translateY(-2px) !important;
+}
+
+.stButton > button:active {
+    transform: translateY(0px) !important;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25) !important;
+}
+
+/* ── Sidebar ────────────────────────────────────────────── */
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #0F2460 0%, #1E3A8A 100%) !important;
+    border-right: none !important;
+}
+
+[data-testid="stSidebar"] * {
+    color: #DBEAFE !important;
+}
+
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
+}
+
+[data-testid="stSidebar"] hr {
+    border-color: rgba(255,255,255,0.15) !important;
+}
+
+[data-testid="stSidebar"] .stRadio label {
+    color: #BFDBFE !important;
+    font-weight: 500 !important;
+    padding: 0.35rem 0 !important;
+}
+
+[data-testid="stSidebar"] .stRadio [data-testid="stWidgetLabel"] {
+    color: #93C5FD !important;
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.8px !important;
+}
+
+[data-testid="stSidebar"] .stInfo {
+    background: rgba(255,255,255,0.08) !important;
+    border: 1px solid rgba(255,255,255,0.15) !important;
+    border-radius: 10px !important;
+    color: #BFDBFE !important;
+}
+
+/* ── Data Tables ────────────────────────────────────────── */
+[data-testid="stDataFrame"] {
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04) !important;
+}
+
+/* ── Alerts / Info Boxes ────────────────────────────────── */
+.stAlert {
+    border-radius: 12px !important;
+    border: none !important;
+    font-weight: 500 !important;
+}
+
+.stSuccess {
+    background-color: #F0FDF4 !important;
+    border-left: 4px solid #22C55E !important;
+}
+
+.stWarning {
+    background-color: #FFFBEB !important;
+    border-left: 4px solid #F59E0B !important;
+}
+
+.stInfo {
+    background-color: #EFF6FF !important;
+    border-left: 4px solid #3B82F6 !important;
+}
+
+.stError {
+    background-color: #FFF1F2 !important;
+    border-left: 4px solid #F43F5E !important;
+}
+
+/* ── Progress / Spinner ─────────────────────────────────── */
+.stSpinner > div {
+    border-top-color: #2563EB !important;
+}
+
+/* ── Expander ───────────────────────────────────────────── */
+[data-testid="stExpander"] {
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 12px !important;
+    background: #FFFFFF !important;
+    margin-bottom: 0.75rem !important;
+}
+
+[data-testid="stExpander"] summary {
+    font-weight: 600 !important;
+    color: #1E3A8A !important;
+    padding: 0.9rem 1.2rem !important;
+}
+
+/* ── Text Input / Select ────────────────────────────────── */
+.stTextInput > div > div > input,
+.stSelectbox > div > div,
+.stDateInput > div > div > input {
+    border-radius: 10px !important;
+    border: 1.5px solid #CBD5E1 !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 0.9rem !important;
+    transition: border-color 0.2s ease !important;
+}
+
+.stTextInput > div > div > input:focus,
+.stSelectbox > div > div:focus-within {
+    border-color: #2563EB !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12) !important;
+}
+
+/* ── Score Ring ─────────────────────────────────────────── */
+.score-ring {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(#2563EB var(--score-pct), #EFF6FF 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    box-shadow: 0 4px 20px rgba(37,99,235,0.2);
+    position: relative;
+}
+
+.score-ring-inner {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1E3A8A;
+}
+
+/* ── Badge Chips ────────────────────────────────────────── */
+.badge-high {
+    background-color: #FEE2E2; color: #991B1B;
+    padding: 3px 12px; border-radius: 20px;
+    font-size: 0.78rem; font-weight: 700;
+    display: inline-block;
+}
+.badge-medium {
+    background-color: #FEF3C7; color: #92400E;
+    padding: 3px 12px; border-radius: 20px;
+    font-size: 0.78rem; font-weight: 700;
+    display: inline-block;
+}
+.badge-low {
+    background-color: #D1FAE5; color: #065F46;
+    padding: 3px 12px; border-radius: 20px;
+    font-size: 0.78rem; font-weight: 700;
+    display: inline-block;
+}
+
+/* ── Topic Tag ──────────────────────────────────────────── */
+.topic-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, #EFF6FF, #DBEAFE);
+    border: 1px solid #93C5FD;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1E40AF;
+    margin: 4px 4px 4px 0;
+}
+
+/* ── Step Progress ──────────────────────────────────────── */
+.pipeline-step {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0.7rem 1.2rem;
+    border-radius: 10px;
+    background: #F8FAFF;
+    border: 1px solid #E2E8F0;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #334155;
+}
+
+/* ── Dividers ───────────────────────────────────────────── */
+hr {
+    border: none;
+    border-top: 1.5px solid #E2E8F0;
+    margin: 1.5rem 0;
+}
+
+/* ── Subheader override ─────────────────────────────────── */
+h2, h3 {
+    color: #1E3A8A;
+    font-weight: 700;
+}
+
+/* ── Scrollbar ──────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #F1F5F9; border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: #93C5FD; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #2563EB; }
