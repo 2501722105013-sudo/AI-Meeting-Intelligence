@@ -1,0 +1,33 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Database (generated at runtime)
+meetings.db
+*.db
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ngrok / Scratch
+scratch/
+*.log
+
+# Large model caches (downloaded at runtime)
+*.bin
+*.safetensors
